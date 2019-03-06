@@ -1,0 +1,165 @@
+/*  GENERAL ABOUT PAGE 
+/* ------------------------------ */
+body {
+    font-family: Nunito;
+  }
+  
+@media only screen and (min-width : 768px){
+    main{
+      margin: 0 auto;
+      width:80%;
+       }
+  }
+
+
+/*  ABOUT PAGE TITLE SECTION 
+/* ------------------------------ */
+.header-title-about{
+margin-top: rem-calc(80);
+}
+.Coliberate-empowers {
+  font-size: rem-calc(28);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #000000;
+  }
+  .We-want-groups-and-i {
+    font-size: rem-calc(18);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #4a4a4a;
+  }
+/*  ABOUT PAGE IMAGE  SECTION 
+/* ------------------------------ */
+  .wings-section{
+    margin-top:rem-calc(64);
+  }
+  .wings-image {
+    width: rem-calc(994);
+    height:rem-calc(728);
+  }
+
+/*  ABOUT PAGE TEXT SECTION 
+/* ------------------------------ */
+.A-BRIEF-HISTORY {
+    font-size: rem-calc(32);
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+  .Mohamed-a-founding {
+    font-size:rem-calc(18);
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color:#4a4a4a;
+    margin-top:rem-calc(53);
+  }
+  .text-div{
+      margin-right:0;
+  }
+
+/* "WHO WE ARE" ABOUT PAGE STYLE
+/* ------------------------------ */
+ .WHO-WE-ARE-BOX {
+    background-color: #f9fafe;
+    margin: 0 auto;
+  }
+  .row1{
+  margin-bottom: rem-calc(26);
+  }
+  .small-image-box h2 {
+    font-weight: 50;
+    font-size: 1.7rem;
+  }
+  .small-image-box h3 {
+    font-size: 1rem;
+    font-weight: 50;
+  }
+  .image-round {
+    border-radius: 100%;
+    max-width:  rem-calc(200);
+    max-height: rem-calc(200);
+  }
+  .WHO-WE-ARE {
+   padding-top: rem-calc(62);
+   padding-bottom:rem-calc(68);
+   font-size:rem-calc(32);
+   font-weight: 300;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: normal;
+   color: #000000;
+
+  }
+
+/*  ABOUT PAGE MOBILE VERSION 
+/* ------------------------------ */
+  @media only screen and (max-width : 767px){
+   
+    main{
+       width:100%;
+    }
+/*  ABOUT TITLE SECTION  MOBILE VERSION
+/* ------------------------------ */
+  .We-want-groups-and-i {
+    font-size:rem-calc(18);
+   }
+   .Coliberate-empowers {
+    font-size:rem-calc(28);
+  }
+/* --------------------------------------------------------------------------*/
+/*  ABOUT PAGE IMAGE  SECTION  MOBILE VERSION
+/* ------------------------------ */
+
+    .wings-section{
+        margin-top:rem-calc(58);
+      }
+
+/*  ABOUT TEXT SECTION  MOBILE VERSION
+/* ------------------------------ */
+    .A-BRIEF-HISTORY {
+        font-size: rem-calc(32);
+        font-weight: 300;
+    }
+    .Mohamed-a-founding {
+        /*width:rem-calc(299);
+        height:rem-calc(991);*/
+        font-size:rem-calc(18);
+      }
+/* "WHO WE ARE" ABOUT PAGE STYLE MOBILE VERSION
+/* ------------------------------ */
+  .small-image-box h2 {
+    font-weight: 20;
+    font-size: 1rem;
+  }
+  .small-image-box h3 {
+    font-size: 0.8rem;
+    font-weight: 50;
+  }
+  .image-round {
+    border-radius: 100%;
+    max-width:  rem-calc(150);
+    max-height: rem-calc(150);
+  }
+  .row-mobile{
+    padding-top : rem-calc(20)
+ }
+
+
+}
+
+
+

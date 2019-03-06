@@ -1,0 +1,1592 @@
+/**
+ * Functions
+ */
+/**
+ * Cores
+ */
+/*! sanitize.css v5.0.0 | CC0 License | github.com/jonathantneal/sanitize.css */
+/* Document (https://html.spec.whatwg.org/multipage/semantics.html#semantics)
+   ========================================================================== */
+/**
+ * 1. Remove repeating backgrounds in all browsers (opinionated).
+ * 2. Add box sizing inheritence in all browsers (opinionated).
+ */
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  /* 1 */
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritence in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
+}
+
+/**
+ * 1. Add border box sizing in all browsers (opinionated).
+ * 2. Add the default cursor in all browsers (opinionated).
+ * 3. Prevent font size adjustments after orientation changes in IE and iOS.
+ */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  cursor: default;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections (https://html.spec.whatwg.org/multipage/semantics.html#sections)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* Grouping content (https://html.spec.whatwg.org/multipage/semantics.html#grouping-content)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+nav ol,
+nav ul {
+  list-style: none;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics (https://html.spec.whatwg.org/multipage/semantics.html#text-level-semantics)
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+/* Embedded content (https://html.spec.whatwg.org/multipage/embedded-content.html#embedded-content)
+   ========================================================================== */
+/*
+ * Change the alignment on media elements in all browers (opinionated).
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+svg {
+  fill: currentColor;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Tabular data (https://html.spec.whatwg.org/multipage/tables.html#tables)
+   ========================================================================== */
+/**
+ * Collapse border spacing
+ */
+table {
+  border-collapse: collapse;
+}
+
+/* Forms (https://html.spec.whatwg.org/multipage/forms.html#forms)
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Inherit styling in all browsers (opinionated).
+ */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the default vertical scrollbar in IE.
+ * 2. Change the resize direction on textareas in all browsers (opinionated).
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  resize: vertical;
+  /* 2 */
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive elements (https://html.spec.whatwg.org/multipage/forms.html#interactive-elements)
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting (https://html.spec.whatwg.org/multipage/scripting.html#scripting-3)
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* User interaction (https://html.spec.whatwg.org/multipage/interaction.html#editing)
+   ========================================================================== */
+/*
+ * Remove the tapping delay on clickable elements (opinionated).
+ * 1. Remove the tapping delay in IE 10.
+ */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ARIA (https://w3c.github.io/html-aria/)
+   ========================================================================== */
+/**
+ * Change the cursor on busy elements (opinionated).
+ */
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+/*
+ * Change the cursor on control elements (opinionated).
+ */
+[aria-controls] {
+  cursor: pointer;
+}
+
+/*
+ * Change the display on visually hidden accessible elements (opinionated).
+ */
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  display: inherit;
+  position: absolute;
+}
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements (opinionated).
+ */
+[aria-disabled] {
+  cursor: default;
+}
+
+/*
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+// fonts
+$font-family: 'Lato', Helvetica, sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-heavy: 700;
+$font-height: 1.5;
+
+// colors
+$dark-grey: #333447;
+$dark-gray: #333447; // for the Americans
+
+// universal
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: $font-family;
+  color: $dark-grey;
+  line-height: $font-height;
+}
+
+// typography
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-regular {
+  font-weight: $font-weight-regular;
+}
+
+.font-heavy {
+  font-weight: $font-weight-heavy;
+}
+
+// utility
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+// grid
+
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    width: 80%;
+  }
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 75%;
+    max-width: 60rem;
+  }
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: $width;
+}
+
+.col-1-sm { width:($width / 12) - ($gutter * 11 / 12); }
+.col-2-sm { width: ($width / 6) - ($gutter * 10 / 12); }
+.col-3-sm { width: ($width / 4) - ($gutter * 9 / 12); }
+.col-4-sm { width: ($width / 3) - ($gutter * 8 / 12); }
+.col-5-sm { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+.col-6-sm { width: ($width / 2) - ($gutter * 6 / 12); }
+.col-7-sm { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+.col-8-sm { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+.col-9-sm { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+.col-10-sm { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+.col-11-sm { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+.col-12-sm { width: $width; }
+
+@media only screen and (min-width: $breakpoint-med) {
+  .col-1 { width:($width / 12) - ($gutter * 11 / 12); }
+  .col-2 { width: ($width / 6) - ($gutter * 10 / 12); }
+  .col-3 { width: ($width / 4) - ($gutter * 9 / 12); }
+  .col-4 { width: ($width / 3) - ($gutter * 8 / 12); }
+  .col-5 { width: ($width / (12 / 5)) - ($gutter * 7 / 12); }
+  .col-6 { width: ($width / 2) - ($gutter * 6 / 12); }
+  .col-7 { width: ($width / (12 / 7)) - ($gutter * 5 / 12); }
+  .col-8 { width: ($width / (12 / 8)) - ($gutter * 4 / 12); }
+  .col-9 { width: ($width / (12 / 9)) - ($gutter * 3 / 12); }
+  .col-10 { width: ($width / (12 / 10)) - ($gutter * 2 / 12); }
+  .col-11 { width: ($width / (12 / 11)) - ($gutter * 1 / 12); }
+  .col-12 { width: $width; }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+*/
+/**
+ * Components
+ */
+* {
+  font-family: Nunito !important;
+}
+
+@media (max-width: 785px) {
+  .navbar-brand {
+    justify-self: center !important;
+  }
+  #navbar-menu ul {
+    text-align: center;
+  }
+}
+
+nav {
+  margin: 0 auto;
+  width: 75%;
+  font-family: Nunito !important;
+}
+
+.btn-join-us:link,
+.btn-join-us:visited {
+  background-color: var(--marigold);
+  border: 1px solid var(--marigold);
+  color: #fff !important;
+  border-radius: 1.3125rem;
+  text-align: center;
+}
+
+.btn-join-us:hover,
+.btn-join-us:active {
+  background-color: var(--marigold);
+  border: 1px solid var(--marigold);
+  color: #fff !important;
+  border-radius: 21px !important;
+}
+
+/**
+ * Pages
+ */
+/* ------------------------------ */
+/* Color Palette
+/* ------------------------------ */
+:root {
+  --accent-color: #4a90e2;
+  --marigold: #ffc000;
+  --black: #222222;
+  --cloudy-blue: #b7bbcd;
+  --greyish-brown: #4a4a4a;
+  --pale-grey: #ebedf3;
+  --very-pale-grey: #f9fafe;
+}
+
+/* ------------------------------ */
+body {
+  font-family: Nunito !important;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+section {
+  margin-bottom: 5%;
+}
+
+.header-home {
+  height: 80vh;
+}
+
+.home-header-text {
+  font-style: normal;
+  font-stretch: normal;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .header-home {
+    background: url("../../../assets/img/home.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    margin: 0 auto;
+    width: 75%;
+    background: #fff;
+  }
+  .swipe-home-image img {
+    width: 27.1875rem;
+    height: 24.4375rem;
+  }
+  .home-header-text {
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 1.39;
+    letter-spacing: -0.03125rem;
+  }
+  .glocalBox {
+    border-top-right-radius: 3.75rem;
+    border-bottom-right-radius: 3.75rem;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .Coliberate-intro {
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+    padding-top: 1.875rem;
+  }
+  .glocal-title {
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+  .glocal-btn {
+    padding-left: 3.75rem;
+    padding-top: 3.75rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-home {
+    background: url("../../../assets/img/bg/mobile-home-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    width: 100%;
+    background: #fff;
+  }
+  .home-small-title {
+    text-align: center;
+  }
+  .swipe-home-image img {
+    max-width: 10.1875rem;
+    max-height: 9.1875rem;
+  }
+  .home-header-text {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.19;
+    letter-spacing: -0.025rem;
+  }
+  .glocalBox {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    text-align: center;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .glocal-btn {
+    padding-left: 0rem;
+    padding-top: 3.75rem;
+  }
+  .Coliberate-intro {
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+  }
+  .glocal-title {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 1252px) and (min-width: 768px) {
+  .header-home {
+    background: url("../../../assets/img/home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    margin: 0 auto;
+    width: 75%;
+    background: #fff;
+  }
+  .swipe-home-image img {
+    max-width: 18.75rem;
+    max-height: 12.5rem;
+  }
+  .glocalBox {
+    border-top-right-radius: 3.75rem;
+    border-bottom-right-radius: 3.75rem;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .glocalBox p {
+    text-align: justify;
+  }
+  .glocal-btn {
+    padding-left: 3.75rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.home-small-title {
+  padding-top: 3.75rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  border-radius: 12.5rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-learn-more {
+  font-size: 0.9375rem !important;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.btn-learn-more:link,
+.btn-learn-more:visited {
+  background-color: var(--accent-color);
+  border: 0.0625rem solid var(--accent-color);
+  margin-right: 1.25rem;
+  color: #fff;
+}
+
+.btn-learn-more:active,
+.btn-learn-more:hover {
+  background-color: var(--accent-color);
+  border: 0.0625rem solid var(--accent-color);
+  color: #fff;
+}
+
+/* PARTNERS LOGOS  SECTION 
+/* ------------------------------ */
+.partner {
+  padding: 5%;
+}
+
+.logos {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.partnersText {
+  width: 11.875rem;
+  height: 1.25rem;
+  font-family: "Nunito";
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b7bbcd;
+}
+
+.logo img {
+  max-width: 5em;
+  max-height: 5em;
+}
+
+/* GLOCAL SECTION 
+/* ------------------------------ */
+#glocal {
+  text-align: left;
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 5rem;
+}
+
+.glocalBox {
+  padding-bottom: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  background-color: #f9fafe;
+}
+
+.Coliberate-intro {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #5f5f5f;
+}
+
+.Coliberate-intro-weight {
+  font-weight: 600;
+}
+
+.glocalEq {
+  text-align: center;
+  padding-left: 8em;
+  padding-top: 4em;
+}
+
+.localPlusGlobal h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  color: #b7bbcd;
+}
+
+.glocal-title {
+  font-weight: 300;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/* CONTACT US SECTION 
+/* ------------------------------ */
+.contact-us-text {
+  margin-top: 15%;
+}
+
+/*  GENERAL SWIPE PAGE 
+/* ------------------------------ */
+body {
+  font-family: Nunito;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/*  HEADER SWIPE PAGE
+/* ------------------------------ */
+.header-swipe {
+  background-image: url("../img/swipe_bg.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.swipe-screen-header {
+  width: 11.875rem;
+  height: 8.75rem;
+}
+
+.header-text-swipe h1 {
+  font-size: 2.75rem;
+  font-weight: 37.5rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.39;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin-top: 10.75rem;
+}
+
+.CoLiberate-Swipe-pow {
+  font-size: 1.375rem;
+  font-weight: 18.75rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.77;
+  letter-spacing: -0.2px;
+  color: #5f5f5f;
+}
+
+/*  MOBILE VERSION : PRICING TABLE SECTION 
+/* ------------------------------ */
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  .header-text-swipe h1 {
+    /*width: rem-calc(375);
+height: rem-calc(183);*/
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 2.625rem;
+  }
+}
+
+@media only screen and (max-width: 941px) and (min-width: 577px) {
+  main {
+    width: 100%;
+  }
+  .swipe-btn-header {
+    margin-left: 3em;
+  }
+}
+
+/*  BUTTONS
+/* ------------------------------ */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 200px;
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-learn-more {
+  font-size: 0.9375rem !important;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.btn-learn-more:link,
+.btn-learn-more:visited {
+  background-color: #4a90e2;
+  border: 1px solid #4a90e2;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.btn-learn-more:active,
+.btn-learn-more:hover {
+  background-color: #4a90e2;
+  border: 1px solid #4a90e2;
+  color: #fff;
+}
+
+/*  ACCES MONITOR MANAGE SECTION
+/* ------------------------------ */
+.icons-section-swipe img {
+  height: 4rem;
+  margin-bottom: 1.625rem;
+}
+
+.icons-section-swipe .swipe-title {
+  margin-bottom: 5.0625rem;
+}
+
+.swipe-title {
+  font-size: 32px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 1em;
+}
+
+.monitor-manage-text {
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.61;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.section-2swipes {
+  margin-top: 5.875rem;
+}
+
+/*  Designs to choose from SECTION
+/* ------------------------------ */
+.SWIPE-DESIGNS {
+  text-align: center;
+  padding-top: 7em;
+}
+
+.swipe-designs-section-background {
+  margin: 0 auto;
+  border-top-left-radius: 6.25rem;
+  border-bottom-left-radius: 6.25rem;
+  background-color: #f9fafe;
+}
+
+.nav-tabs {
+  border-bottom: 0 !important;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #f9fafe !important;
+  border-color: #f9fafe !important;
+  /*color: #222222;*/
+  border-bottom: 2px solid !important;
+  border-bottom-color: #4a4a4a !important;
+  border-bottom: 3px solid black !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.swipe-designs-section-background li a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.61;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.swipe-designs-section-background {
+  padding-top: 3.125rem;
+}
+
+#swipe-display img {
+  width: 35.375rem;
+  height: 26rem;
+  padding-top: 2.9375rem;
+}
+
+#swipe-basic img {
+  width: 35.375rem;
+  height: 26rem;
+  padding-top: 2.9375rem;
+}
+
+/*  MOBILE VERSION : Designs to choose from SECTION 
+/* ------------------------------ */
+@media only screen and (max-width: 767px) {
+  .swipe-designs-section-background {
+    margin: 0 0;
+    width: 100% !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  #swipe-display img {
+    width: 18.8125rem;
+    height: 13.8125rem;
+    padding-top: 2.625rem;
+    margin-bottom: 4.6875rem;
+    padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+  }
+  #swipe-basic img {
+    width: 18.8125rem;
+    height: 13.8125rem;
+    margin-bottom: 4.6875rem;
+    padding-left: 2.3125rem;
+    padding-right: 2.3125rem;
+  }
+  .swipe-designs-menu-toggle :first-child {
+    text-align: center;
+  }
+  .swipe-designs-menu-toggle :last-child {
+    text-align: center;
+  }
+}
+
+/*  PRICE TABLE SECTION
+/* ------------------------------ */
+.SWIPE-PRICING-PLANS {
+  margin-top: 7.875rem;
+}
+
+.pricing-table td {
+  text-align: center;
+  height: 5.3125rem;
+  /*75.3);*/
+  width: 10.125rem;
+  vertical-align: middle !important;
+}
+
+.pricing-table th {
+  width: 24.9375rem;
+  height: 4.70625rem;
+  vertical-align: middle !important;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5f5f5f;
+}
+
+.pricing-table-columns-titles {
+  border-top: none !important;
+}
+
+.check-mark {
+  content: "\2713";
+  color: #0abdb2;
+}
+
+.check-mark h6 {
+  font-size: large;
+}
+
+.swipe-price h6 {
+  font-size: 2rem;
+  font-weight: 18.75rem;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+/*  MOBILE VERSION : PRICING TABLE SECTION 
+/* ------------------------------ */
+@media only screen and (max-width: 767px) {
+  .pricing-table td {
+    text-align: center;
+    height: 5.225rem;
+    width: 6.625rem;
+  }
+  .pricing-table th {
+    width: 7.5875rem;
+    height: 4rem;
+    font-size: 0.875rem;
+  }
+  .swipe-price h6 {
+    font-size: 2.875rem;
+    font-weight: 1.625rem;
+    font-size: 1.1875rem;
+  }
+}
+
+/*  GENERAL ABOUT PAGE 
+/* ------------------------------ */
+body {
+  font-family: Nunito;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+/*  ABOUT PAGE TITLE SECTION 
+/* ------------------------------ */
+.header-title-about {
+  margin-top: 5rem;
+}
+
+.Coliberate-empowers {
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #000000;
+}
+
+.We-want-groups-and-i {
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #4a4a4a;
+}
+
+/*  ABOUT PAGE IMAGE  SECTION 
+/* ------------------------------ */
+.wings-section {
+  margin-top: 4rem;
+}
+
+.wings-image {
+  width: 62.125rem;
+  height: 45.5rem;
+}
+
+/*  ABOUT PAGE TEXT SECTION 
+/* ------------------------------ */
+.A-BRIEF-HISTORY {
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.Mohamed-a-founding {
+  font-size: 1.125rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  margin-top: 3.3125rem;
+}
+
+.text-div {
+  margin-right: 0;
+}
+
+/* "WHO WE ARE" ABOUT PAGE STYLE
+/* ------------------------------ */
+.WHO-WE-ARE-BOX {
+  background-color: #f9fafe;
+  margin: 0 auto;
+}
+
+.row1 {
+  margin-bottom: 1.625rem;
+}
+
+.small-image-box h2 {
+  font-weight: 50;
+  font-size: 1.7rem;
+}
+
+.small-image-box h3 {
+  font-size: 1rem;
+  font-weight: 50;
+}
+
+.image-round {
+  border-radius: 100%;
+  max-width: 12.5rem;
+  max-height: 12.5rem;
+}
+
+.WHO-WE-ARE {
+  padding-top: 3.875rem;
+  padding-bottom: 4.25rem;
+  font-size: 2rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/*  ABOUT PAGE MOBILE VERSION 
+/* ------------------------------ */
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+  }
+  /*  ABOUT TITLE SECTION  MOBILE VERSION
+/* ------------------------------ */
+  .We-want-groups-and-i {
+    font-size: 1.125rem;
+  }
+  .Coliberate-empowers {
+    font-size: 1.75rem;
+  }
+  /* --------------------------------------------------------------------------*/
+  /*  ABOUT PAGE IMAGE  SECTION  MOBILE VERSION
+/* ------------------------------ */
+  .wings-section {
+    margin-top: 3.625rem;
+  }
+  /*  ABOUT TEXT SECTION  MOBILE VERSION
+/* ------------------------------ */
+  .A-BRIEF-HISTORY {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  .Mohamed-a-founding {
+    /*width:rem-calc(299);
+        height:rem-calc(991);*/
+    font-size: 1.125rem;
+  }
+  /* "WHO WE ARE" ABOUT PAGE STYLE MOBILE VERSION
+/* ------------------------------ */
+  .small-image-box h2 {
+    font-weight: 20;
+    font-size: 1rem;
+  }
+  .small-image-box h3 {
+    font-size: 0.8rem;
+    font-weight: 50;
+  }
+  .image-round {
+    border-radius: 100%;
+    max-width: 9.375rem;
+    max-height: 9.375rem;
+  }
+  .row-mobile {
+    padding-top: 1.25rem;
+  }
+}

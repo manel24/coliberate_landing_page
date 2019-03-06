@@ -1,0 +1,307 @@
+//
+// Pages/index
+// -----------------------------------
+/* ------------------------------ */
+
+/* Color Palette
+/* ------------------------------ */
+:root {
+  --accent-color: #4a90e2;
+  --marigold: #ffc000;
+  --black: #222222;
+  --cloudy-blue: #b7bbcd;
+  --greyish-brown: #4a4a4a;
+  --pale-grey: #ebedf3;
+  --very-pale-grey: #f9fafe;
+}
+
+/* ------------------------------ */
+
+body {
+  font-family: Nunito !important;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+section {
+  margin-bottom: 5%;
+}
+
+.header-home {
+  height: 80vh;
+}
+
+.home-header-text {
+  font-style: normal;
+  font-stretch: normal;
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .header-home {
+    background: url("../../../assets/img/home.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    margin: 0 auto;
+    width: 75%;
+    background: #fff;
+  }
+  .swipe-home-image img {
+    width: rem-calc(435);
+    height: rem-calc(391);
+  }
+  .home-header-text {
+    font-size: rem-calc(44);
+    font-weight: 600;
+    line-height: 1.39;
+    letter-spacing: rem-calc(-0.5);
+  }
+  .glocalBox {
+    border-top-right-radius: rem-calc(60);
+    border-bottom-right-radius: rem-calc(60);
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .Coliberate-intro {
+    padding-right: rem-calc(60);
+    padding-left: rem-calc(60);
+    padding-top: rem-calc(30);
+  }
+  .glocal-title {
+    padding-right: rem-calc(60);
+    padding-left: rem-calc(60);
+  }
+  .glocal-btn {
+    padding-left: rem-calc(60);
+    padding-top: rem-calc(60);
+  }
+}
+
+@media (max-width: 767px) {
+  .header-home {
+    background: url("../../../assets/img/bg/mobile-home-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    width: 100%;
+    background: #fff;
+  }
+  .home-small-title {
+    text-align: center;
+  }
+  .swipe-home-image img {
+    max-width: rem-calc(163);
+    max-height: rem-calc(147);
+  }
+  .home-header-text {
+    font-size: rem-calc(32);
+    font-weight: normal;
+    line-height: 1.19;
+    letter-spacing: rem-calc(-0.4);
+  }
+  .glocalBox {
+    border-top-right-radius: rem-calc(0);
+    border-bottom-right-radius: rem-calc(0);
+    text-align: center;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .glocal-btn {
+    padding-left: rem-calc(0);
+    padding-top: rem-calc(60);
+  }
+  .Coliberate-intro {
+    padding-right: rem-calc(0);
+    padding-left: rem-calc(0);
+    padding-top: rem-calc(0);
+  }
+  .glocal-title {
+    padding-right: rem-calc(0);
+    padding-left: rem-calc(0);
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 1252px) and (min-width: 768px) {
+  .header-home {
+    background: url("../../../assets/img/home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main {
+    margin: 0 auto;
+    width: 75%;
+    background: #fff;
+  }
+  .swipe-home-image img {
+    max-width: rem-calc(300);
+    max-height: rem-calc(200);
+  }
+  .glocalBox {
+    border-top-right-radius: rem-calc(60);
+    border-bottom-right-radius: rem-calc(60);
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 4em;
+    background-color: #f9fafe;
+  }
+  .glocalBox p{
+    text-align: justify;
+  }
+  .glocal-btn {
+    padding-left: rem-calc(60);
+    padding-top: rem-calc(40);
+  }
+}
+
+.home-small-title {
+  padding-top: rem-calc(60);
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: rem-calc(10) rem-calc(30);
+  border-radius: rem-calc(200);
+  text-decoration: none;
+  font-weight: 300;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-learn-more {
+  font-size: rem-calc(15) !important;
+  font-weight: bold !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.btn-learn-more:link,
+.btn-learn-more:visited {
+  background-color: var(--accent-color);
+  border: rem-calc(1) solid var(--accent-color);
+  margin-right: rem-calc(20);
+  color: #fff;
+}
+
+.btn-learn-more:active,
+.btn-learn-more:hover {
+  background-color: var(--accent-color);
+  border: rem-calc(1) solid var(--accent-color);
+  color: #fff;
+}
+
+/* PARTNERS LOGOS  SECTION 
+/* ------------------------------ */
+
+.partner {
+  padding: 5%;
+}
+.logos {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.partnersText {
+  width: rem-calc(190);
+  height: rem-calc(20);
+  font-family: "Nunito";
+  font-size: rem-calc(15);
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b7bbcd;
+}
+.logo img {
+  max-width: 5em;
+  max-height: 5em;
+}
+
+/* GLOCAL SECTION 
+/* ------------------------------ */
+
+#glocal {
+  text-align: left;
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: rem-calc(80);
+}
+
+.glocalBox {
+  padding-bottom: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 4em;
+  background-color: #f9fafe;
+}
+
+.Coliberate-intro {
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #5f5f5f;
+}
+.Coliberate-intro-weight {
+  font-weight: 600;
+}
+
+.glocalEq {
+  text-align: center;
+  padding-left: 8em;
+  padding-top: 4em;
+}
+
+.localPlusGlobal h3 {
+  font-size: rem-calc(24);
+  font-weight: normal;
+  font-style: normal;
+  color: #b7bbcd;
+}
+.glocal-title {
+  font-weight: 300;
+  font-size: rem-calc(25);
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+/* CONTACT US SECTION 
+/* ------------------------------ */
+
+.contact-us-text{
+margin-top: 15%;
+}

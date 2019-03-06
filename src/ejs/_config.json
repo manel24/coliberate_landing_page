@@ -1,0 +1,14 @@
+{
+  "default": {
+    "lang": "en",
+    "charset": "UTF-8",
+    "title": "CoLiberate",
+    "description": "Landing page of CoLiberate",
+    "keywords": "",
+    "author": "Think.iTeers: Sana & Manel",
+    "publicPath": "http://localhost:8080",
+    "analytics": "",
+    "facebook": "",
+    "instagram": ""
+  }
+}

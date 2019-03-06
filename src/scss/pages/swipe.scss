@@ -1,0 +1,301 @@
+/*  GENERAL SWIPE PAGE 
+/* ------------------------------ */
+body {
+  font-family: Nunito;
+}
+
+@media only screen and (min-width : 768px){
+main{
+  margin: 0 auto;
+  width:80%;
+   }
+}
+
+/*  HEADER SWIPE PAGE
+/* ------------------------------ */
+.header-swipe {
+background-image: url("../img/swipe_bg.png");
+height: 100vh;
+background-position: center;
+background-size: cover;
+}
+.swipe-screen-header {
+width: rem-calc(190);
+height: rem-calc(140);
+}
+.header-text-swipe h1 {
+font-size: rem-calc(44);
+font-weight: rem-calc(600);
+font-style: normal;
+font-stretch: normal;
+line-height: 1.39;
+letter-spacing: -0.5px;
+color: #000000;
+margin-top: rem-calc(172);  
+}
+.CoLiberate-Swipe-pow {
+font-size: rem-calc(22);
+font-weight: rem-calc(300);
+font-style: normal;
+font-stretch: normal;
+line-height: 2.77;
+letter-spacing: -0.2px;
+color: #5f5f5f;
+}
+/*  MOBILE VERSION : PRICING TABLE SECTION 
+/* ------------------------------ */
+
+@media only screen and (max-width : 767px){
+ 
+  main{
+     width:100%;
+}
+.header-text-swipe h1 {
+/*width: rem-calc(375);
+height: rem-calc(183);*/
+font-size: rem-calc(40);
+font-weight: 600;
+margin-top: rem-calc(42);  
+}
+ 
+
+}
+@media only screen and (max-width : 941px) and (min-width : 577px){
+ 
+main{
+   width:100%;
+}
+.swipe-btn-header{
+margin-left: 3em;
+}
+
+}
+
+/*  BUTTONS
+/* ------------------------------ */
+.btn:link,
+.btn:visited {
+display: inline-block;
+padding: 10px 30px;
+border-radius: 200px;
+text-decoration: none;
+font-weight: 300;
+color: #fff;
+transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+.btn-learn-more {
+font-size: rem-calc(15) !important;
+font-weight: bold !important;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+}
+.btn-learn-more:link,
+.btn-learn-more:visited {
+background-color: #4a90e2;
+border: 1px solid #4a90e2;
+margin-right: 20px;
+color: #fff;
+}
+
+.btn-learn-more:active,
+.btn-learn-more:hover {
+background-color: #4a90e2;
+border: 1px solid #4a90e2;
+color: #fff;
+}
+/*  ACCES MONITOR MANAGE SECTION
+/* ------------------------------ */
+.icons-section-swipe {
+  img {
+      height: rem-calc(64);
+      margin-bottom: rem-calc(26);
+  }
+  .swipe-title {
+      margin-bottom: rem-calc(81);
+  }
+}
+
+.swipe-title {
+  font-size: 32px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 1em;
+}
+.monitor-manage-text{
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.61;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.section-2swipes{
+
+  margin-top:rem-calc(94);
+}
+/*  Designs to choose from SECTION
+/* ------------------------------ */
+.SWIPE-DESIGNS {
+text-align: center;
+padding-top: 7em;
+}
+.swipe-designs-section-background {
+margin: 0 auto;
+border-top-left-radius: rem-calc(100);
+border-bottom-left-radius: rem-calc(100);
+background-color: #f9fafe;
+}
+.nav-tabs {
+ border-bottom : 0 !important ;
+ text-align: center; 
+justify-content: center;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+color: #495057;
+background-color: #f9fafe !important;
+border-color: #f9fafe !important;
+/*color: #222222;*/
+border-bottom: 2px solid !important;
+border-bottom-color: #4a4a4a !important;
+border-bottom: 3px solid black !important;
+padding-bottom: 1.5rem !important;
+}
+
+.swipe-designs-section-background li a {
+
+font-size: rem-calc(18);
+font-weight: 600;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.61;
+letter-spacing: -0.3px;
+text-align: center;
+color: #4a4a4a;
+}
+.swipe-designs-section-background  {
+padding-top: rem-calc(50); 
+}
+#swipe-display img {
+width: rem-calc(566);
+height: rem-calc(416);
+padding-top: rem-calc(47);
+}
+#swipe-basic img {
+width: rem-calc(566);
+height: rem-calc(416);
+padding-top: rem-calc(47);
+}
+/*  MOBILE VERSION : Designs to choose from SECTION 
+/* ------------------------------ */
+@media only screen and (max-width : 767px){
+
+   .swipe-designs-section-background {
+      margin: 0 0;
+      width: 100% !important;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    #swipe-display img {
+      width: rem-calc(301);
+      height: rem-calc(221);
+      padding-top: rem-calc(42);
+      margin-bottom: rem-calc(75);
+      padding-left: rem-calc(37);
+      padding-right: rem-calc(37);
+    }
+    #swipe-basic img {
+      width: rem-calc(301);
+      height: rem-calc(221);
+      margin-bottom: rem-calc(75);
+      padding-left: rem-calc(37);
+      padding-right: rem-calc(37);
+      
+    }
+
+    .swipe-designs-menu-toggle :first-child{
+      text-align: center;
+  }
+    .swipe-designs-menu-toggle :last-child{
+      text-align: center;
+   }
+
+}
+/*  PRICE TABLE SECTION
+/* ------------------------------ */
+.SWIPE-PRICING-PLANS{
+  margin-top: rem-calc(126);
+}
+
+.pricing-table td {
+  text-align: center;
+  height: rem-calc(85)  ;  
+    /*75.3);*/
+  width: rem-calc(162);
+  vertical-align: middle !important;
+}
+.pricing-table th {
+  width: rem-calc(399);
+  height: rem-calc(75.3);
+  vertical-align: middle !important;
+  font-size: rem-calc(18)
+  ;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #5f5f5f;
+}
+.pricing-table-columns-titles {
+  border-top: none !important;
+}
+.check-mark {
+  content: "\2713";
+  color: #0abdb2;
+}
+.check-mark h6 {
+  font-size: large;
+}
+.swipe-price h6 {
+  font-size: rem-calc(32);
+  font-weight: rem-calc(300);
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+/*  MOBILE VERSION : PRICING TABLE SECTION 
+/* ------------------------------ */
+
+@media only screen and (max-width : 767px){
+
+.pricing-table td {
+text-align: center;
+height: rem-calc(83.6);
+width: rem-calc(106)
+}
+.pricing-table th {
+width: rem-calc(121.4);
+height: rem-calc(64);
+font-size: rem-calc(14);
+}
+.swipe-price h6 {
+font-size: rem-calc(46);
+font-weight: rem-calc(26);
+font-size: rem-calc(19);
+}
+
+
+}

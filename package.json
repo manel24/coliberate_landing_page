@@ -1,0 +1,34 @@
+{
+  "name": "coliberate",
+  "version": "1.0.8",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "repository": "",
+  "author": "Think.iT <sanatarhouni@think-it.io> <manelcharouni@think-it.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "eslint": "^3.19.0",
+    "eslint-loader": "^1.7.1",
+    "fancy-log": "^1.3.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-ejs": "^3.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^5.0.0",
+    "run-sequence": "^1.2.2",
+    "webpack": "^2.5.0",
+    "webpack-stream": "^3.2.0"
+  }
+}

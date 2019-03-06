@@ -1,0 +1,172 @@
+<%- include('_common/_head', { key: 'index', }) %>
+
+<main class="main">
+  <div class="container">
+    <section class="header-home">
+      <%- include('_component/_header') %>
+      <div class="row ">
+        <div class="col-sm-12 col-md-6 col-lg-6  text-center">
+          <h6 class="home-small-title">
+            How
+            <span style="color:#4a90e2">Makers</span> Build
+            <span style="color:#f3be00">Everything </span> Together
+          </h6>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-12 col-md-6 col-lg-6 t home-header-text">
+          <h1>Manage your space & tools with a Swipe System.</h1>
+          <br d-none d-md-block />
+          <div class="row justify-content-end"><a class="btn btn-learn-more d-none d-md-block" href="#"
+            >LEARN MORE</a
+          ></div> 
+        </div>
+        <div class="col-md-3 col-lg-3 d-none d-md-block swipe-home-image">
+          <img src="../../../assets/img/swipe_home.png" alt="swipe_home" />
+        </div>
+      </div>
+
+
+
+      <div class="row justify-content-center  d-md-none  d-lg-none d-xl-none ">
+        <div class="col-xs-2 text-center align-self-center">
+          <a class=" btn btn-learn-more" href="#">LEARN MORE</a>
+        </div>
+        <div class="col-xs-2 swipe-home-image text-center">
+          <img src="../../../assets/img/swipe_home.png" alt="swipe_home" />
+        </div>
+      </div>
+    </section>
+    <section id="partners_mobile" class="d-md-none  d-lg-none d-xl-none">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 text-center partnersText ">
+          <p>Already Powered By Swipe:</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around">
+        <div class="col-xs-1  partner">
+          <figure class="logo">
+            <img
+              src="../../../assets/img/partner_logos/makerspace.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+        <div class="col-xs-1  partner">
+          <figure class="logo colum">
+            <img
+              src="../../../assets/img/partner_logos/columbia_eng.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+        <div class="col-xs-1 partner">
+          <figure class="logo">
+            <img
+              src="../../../assets/img/partner_logos/columbia_gsapp.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="partners_desktop" class="d-none d-md-block">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 text-center partnersText ">
+          <p>Already Powered By Swipe:</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around">
+        <div class="col-xs-1  partner">
+          <figure class="logo">
+            <img
+              src="../../../assets/img/partner_logos/makerspace@2x.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+        <div class="col-xs-1  partner">
+          <figure class="logo colum">
+            <img
+              src="../../../assets/img/partner_logos/columbia_eng@2x.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+        <div class="col-xs-1 partner">
+          <figure class="logo">
+            <img
+              src="../../../assets/img/partner_logos/columbia_gsapp@2x.png"
+              alt="logo"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="glocal" class="row">
+      <div class="glocalBox col-xs-12 col-sm-12 col-md-12">
+        <h2 class="glocal-title">
+          LOCAL FABRICATION + GLOBAL COLLABORATION = GLOCAL BENEFIT
+        </h2>
+        <p class="Coliberate-intro">
+          <span class="Coliberate-intro-weight">CoLiberate</span> is the nexus
+          of
+          <span class="Coliberate-intro-weight"
+            >commons-based peer production </span
+          >(CBPP) determined to usher in the economy of the future.We create
+          hardware and software solutions to reimagine the way innovation and
+          industry occurs.
+        </p>
+        <div class="glocal-btn">
+          <a class=" btn btn-learn-more" href="#">LEARN MORE</a>
+        </div>
+      </div>
+    </section>
+    <div class="row justify-content-center d-md-none  d-lg-none d-xl-none">
+      <h2>CONTACT US</h2>
+    </div>
+
+    <section id="contact" class="row justify-content-center">
+      <div
+        class="col-xs-6 col-sm-6 col-md-4 col-lg-4 order-xs-2 order-sm-2 order-md-1 order-lg-1 contact-us"
+      >
+        <form id="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            /> <br>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="content" id="content" rows="6"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" href="#">SEND</button>
+        </form>
+      </div>
+      <div
+        class="col-xs-8 col-sm-8 col-md-5 col-lg-5 order-xs-1 order-sm-1 order-md-2 order-lg-2"
+      >
+        <h2 CLASS="d-none d-md-block">CONTACT US</h2>
+        <p class="contact-us-text">
+          Need additional information or have a question or comment? Please feel
+          free to leave a message, and we'll get back to you as soon as
+          possible!
+        </p>
+      </div>
+    </section>
+  </div>
+  <%- include('_component/_footer') %>
+</main>
+
+<%- include('_common/_foot') %>

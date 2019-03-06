@@ -1,0 +1,39 @@
+<script src="/assets/js/common.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function(e) {
+    console.log("sending email");
+    e.preventDefault();
+    //toast.innerHTML = 'Sending'
+    //submit.disabled = true
+    const payload = {
+      name: form.name.value,
+      email: form.email.value,
+      content: form.content.value
+    };
+    axios
+      .post(
+        "https://6zw48z6zg1.execute-api.us-west-2.amazonaws.com/dev/email/send",
+        payload
+      )
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  });
+</script>
+
+</body>
+</html>

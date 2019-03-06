@@ -1,0 +1,33 @@
+*{
+  font-family: Nunito !important;
+}
+@media (max-width: 785px) {
+  .navbar-brand {
+    justify-self: center !important;
+  }
+  #navbar-menu ul {
+    text-align: center;
+  }
+}
+nav {
+  margin: 0 auto;
+  width: 75%;
+  font-family: Nunito !important;
+}
+
+.btn-join-us:link,
+.btn-join-us:visited {
+  background-color: var(--marigold);
+  border: 1px solid var(--marigold);
+  color: #fff !important;
+  border-radius: rem-calc(21);
+  text-align: center;
+}
+
+.btn-join-us:hover,
+.btn-join-us:active {
+  background-color: var(--marigold);
+  border: 1px solid var(--marigold);
+  color: #fff !important;
+  border-radius: 21px !important;
+}
